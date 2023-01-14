@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* box-sizing: border-box; */
+}
+/* ---------------Header Part Start Here--------------------- */
+header {
+    width: 100%;
+    height: 80px;
+    background: #fefefe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+    box-sizing: border-box;
+}
+.logo_header {
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #3A3A3A;
+}
+.hanburger {
+    display: none;
+}
+.nav-bar ul {
+    display: flex;
+}
+.nav-bar ul li a {
+    display: block;
+    color: #3A3A3A;
+    font-size: 1em;
+    padding: 7px 18px;
+    border-radius: 50px;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+    color: #ffffff;
+    background: #161414;
+}
+
+.nav-bar ul li
+{
+    list-style: none;
+}
+.nav-bar ul li a
+{
+    text-decoration: none;
+}
+/* ---------------------Header Part End--------------- */
+
+/* ----------Responsive CSS Start ------------------ */
+
+@media only screen and (max-width:576px) {
+    
+    /* -------------Header Responsive Part Start------------------ */
+    .logo_header {
+        font-weight: 700;
+        font-size: 1em;
+        color: #3A3A3A;
+    }
+    .hanburger {
+        display: block;
+        cursor: pointer;
+    }
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #11101b;
+        transition: 0.7s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 450px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+        color: #ffffff;
+    }
+    .nav-bar ul li a:hover {
+        color: #ffffff;
+        background: #916666;
+    }
+    /* ---------Header Responsive Part End---------- */
+}

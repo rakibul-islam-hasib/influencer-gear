@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awosome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
     <title>Influencer-Gear</title>
 </head>
 <body>
-    
+    <!-- --------------------Header Part Start Here------------------------------ -->
+    <header>
+        <div class="logo_header">Influencer products</div>
+        <div class="hanburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Sign up</a></li>
+                <li><a href="">Log In</a></li>
+                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-cart-plus"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+ <!-------------------Header Part End Here---------------------->
+ <!-- Main Start -->
+ <main>
+    <!-- -------Top Header Part ---------- -->
+<section class="top-header">
+
+<div class="top-header-container">
+    <div class="top-text-side">
+        <h1>Start your Journey as Influencer</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum sed scelerisque eros. Lectus faucibus.</p>
+        <button class="top-btn">Preebook now <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+    </div>
+    <div class="top-img-part">
+        <img src="img/main-camera.png" alt="">
+    </div>
+</div>    
+</section>
+
+
+
+
+ </main>
+ 
+ <!-- Main End -->
+    <script>
+
+        hanburger = document.querySelector(".hanburger");
+        hanburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+
+    </script>
 </body>
 </html>
