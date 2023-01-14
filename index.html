@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,13 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Influencer-Gear</title>
 </head>
+
 <body>
     <!-- --------------------Header Part Start Here------------------------------ -->
     <header>
+        <span class="sopping-cart">
+            <i class="fa-solid fa-cart-plus"></i>
+        </span>
         <div class="logo_header">Influencer products</div>
         <div class="hanburger">
             <i class="fa-solid fa-bars"></i>
@@ -27,38 +32,43 @@
             </ul>
         </nav>
     </header>
- <!-------------------Header Part End Here---------------------->
- <!-- Main Start -->
- <main>
-    <!-- -------Top Header Part ---------- -->
-<section class="top-header">
+    <!-------------------Header Part End Here---------------------->
+    <!-- Main Start -->
+    <main>
+        <!-- -------Top Header Part ---------- -->
+        <section class="top-header">
 
-<div class="top-header-container">
-    <div class="top-text-side">
-        <h1>Start your Journey as Influencer</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum sed scelerisque eros. Lectus faucibus.</p>
-        <button class="top-btn">Preebook now <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
-    </div>
-    <div class="top-img-part">
-        <img src="img/main-camera.png" alt="">
-    </div>
-</div>    
-</section>
+            <div class="top-header-container">
+                <div class="top-text-side">
+                    <h1>Start your Journey as Influencer</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum sed scelerisque eros.
+                        Lectus faucibus.</p>
+                    <div class="btn-container">
+                        <button class="top-btn">Preebook now &nbsp; <i
+                                class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="top-img-part">
+                    <img src="img/main-camera.png" alt="">
+                </div>
+            </div>
+        </section>
 
 
 
 
- </main>
- 
- <!-- Main End -->
+    </main>
+
+    <!-- Main End -->
     <script>
 
         hanburger = document.querySelector(".hanburger");
-        hanburger.onclick = function() {
+        hanburger.onclick = function () {
             navBar = document.querySelector(".nav-bar");
             navBar.classList.toggle("active");
         }
 
     </script>
 </body>
+
 </html>
