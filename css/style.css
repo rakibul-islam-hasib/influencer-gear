@@ -19,10 +19,11 @@ header {
     padding: 0 10vw;
     box-sizing: border-box;
 }
-.sopping-cart
-{
+
+.sopping-cart {
     display: none;
 }
+
 .logo_header {
     font-weight: 700;
     font-size: 1.5em;
@@ -61,10 +62,10 @@ header {
 
 /* ---------------------Header Part End--------------- */
 /* -----------Top Header Part------------------ */
-.top-header
-{
+.top-header {
     margin: 150px 80px;
 }
+
 .top-header-container {
     display: flex;
     gap: 9vw;
@@ -93,9 +94,113 @@ header {
     align-items: center;
     justify-content: center;
 }
-.top-img-part img
-{
+
+.top-img-part img {
     width: 100%;
+}
+
+/* -------------Payment Getway Part------------------- */
+.payment-getway {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+
+}
+
+.payment-getway img {
+    width: 100px;
+    height: 70px;
+}
+
+/* ---------Popular Text-------- */
+.popular-text h1 {
+    font-size: 1.75em;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+/* ---------------Product Part---------------- */
+.product-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.see-more h4 {
+    font-size: 1.5em;
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 60px;
+    color: #E02C6DDE;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    width: 329px;
+    height: 476px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.card img {
+    width: 300px;
+    height: 256px;
+}
+
+/* --------------------Top Footer Part------------------- */
+.footer-top {
+    margin-top: 100px;
+    display: flex;
+    gap: 90px;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.footer-top-text h1 {
+    font-size: 2.375em;
+}
+
+.footer-top-text p {
+    font-size: 1em;
+    margin-top: 16px;
+}
+
+.footer-top-btn {
+    background: #E02C6D;
+    width: 170px;
+    height: 49px;
+    color: #fefefe;
+    font-weight: 700;
+    border: 0;
+    border-radius: 48px;
+    margin-top: 16px;
+}
+
+/* ------------------Footer Part Start-------------------- */
+footer
+{
+    height: 14.938em;
+    width: 100%;
+    background:  #0A0826;
+    margin-top: 6.25em;
+    color: #fefefe;
+    text-align: center;
+}
+.footer-content h1 {
+    font-size: 2em;
+    padding-top: 1em;
+    margin-bottom: 0.5em;
+}
+.footer-icon i
+{
+    font-size: 2em;
+    margin-top: 1rem;
 }
 /* ----------Responsive CSS Start ------------------ */
 
@@ -107,10 +212,11 @@ header {
         font-size: 1em;
         color: #3A3A3A;
     }
-    .sopping-cart
-    {
+
+    .sopping-cart {
         display: block;
     }
+
     .hanburger {
         display: block;
         cursor: pointer;
@@ -157,24 +263,45 @@ header {
 
     /* ---------Header Responsive Part End---------- */
     /* ------------Top Header Part--------- */
-    .top-header-container
-    {
+    .top-header-container {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         text-align: center;
     }
-    .top-text-side h1
-    {
+
+    .top-text-side h1 {
         font-size: 2.9em;
     }
-    .btn-container
-    {
+
+    .btn-container {
         display: flex;
         justify-content: center;
     }
-    .top-header
-    {
+
+    .top-header {
         margin: 0 auto;
+    }
+
+    /* ----payment getway ------ */
+    .payment-getway {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-card {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .footer-top {
+        flex-direction: column-reverse;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-top-img img {
+        width: 85vw;
+     
     }
 }
